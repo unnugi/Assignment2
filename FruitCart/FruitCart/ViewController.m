@@ -46,7 +46,7 @@
 
 -(NSString *) tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
-    return @"Fruit";
+    return @"Vegetable";
 }
 
 -(int) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section

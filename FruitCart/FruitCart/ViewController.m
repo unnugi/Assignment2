@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "Fruit.h"
+#import "Vegetables.h"
 
 @interface ViewController ()
 
@@ -21,16 +22,15 @@
 	// Do any additional setup after loading the view, typically from a nib.
     _cart = [NSMutableArray arrayWithCapacity:0];
     
-    for(int i = 0; i < 50; i++){
-        NSString * fruitName = [NSString stringWithFormat:@"Banana %d", i];
-        
-        if((i % 10) == 0){
-            fruitName = [NSString stringWithFormat:@"Free Banana %d", i];
-        }
-        Fruit * anonFruit = [[Fruit alloc] initWithWithName:fruitName andColor:@"Yellow" andShape:@"Curved"];
-        [_cart addObject:anonFruit];
-    }
-    
+    NSString * vegetableName = [NSString stringWithFormat:@"Potato"];
+    Vegetables * anonVegetable = [[Vegetables alloc] initWithWithName:vegetableName andColor:@"Brown" andShape:@"Round"];
+    [_cart addObject:anonVegetable];
+    NSString * vegetableName2 = [NSString stringWithFormat:@"Onion"];
+    Vegetables * anonVegetable2 = [[Vegetables alloc] initWithWithName:vegetableName2 andColor:@"Purple" andShape:@"Round"];
+    [_cart addObject:anonVegetable2];
+    NSString * vegetableName3 = [NSString stringWithFormat:@"Pumpkin"];
+    Vegetables * anonVegetable3 = [[Vegetables alloc] initWithWithName:vegetableName3 andColor:@"Orange" andShape:@"Round"];
+    [_cart addObject:anonVegetable3];
     
 }
 
